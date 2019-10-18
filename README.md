@@ -1,4 +1,4 @@
-# Hacker News Frontend Challenge
+# Hacker News Front-end Challenge
 
 ### Objective
 The goal of this challenge is to recreate a light weight version of [hackernews](https://news.ycombinator.com/) using React and the [Firebase Hackernews API](https://github.com/HackerNews/API). You can make improvements to the UI of Hacker News if you wish (not required), however please keep the spirit of the site the same (At most it should look like an updated version of HN)
@@ -12,12 +12,12 @@ You can find a working example here:
 - [React](https://reactjs.org/docs/getting-started.html) (You will use react to create your UI)
 - Routing - User whatever makes the most sense for this project.
 - Data Storage - You can use whatever you want but using redux is not required for this small app. In fact no store is required.
-- Styles/CSS - [Styled components](https://www.styled-components.com/) package is already included, however if you'd like to use a more traditiaonal feel free to
+- Styles/CSS - [Styled components](https://www.styled-components.com/) package is already included, however if you'd like to use a more traditional feel free to
 - [Firebase Hosting](https://firebase.google.com/) - Firebase config is setup to allow for Firebase Hosting. You can create a Firebase account if you'd like to use this feature
-- [Webpack](https://webpack.js.org/) - Webpack is already setup with Babel and plugins to complile react. Feel free to modify this file.
+- [Webpack](https://webpack.js.org/) - Webpack is already setup with Babel and plug-ins to compile react. Feel free to modify this file.
 
 ### Tips
-Although you could probably just make normal ajax requests for to the firebase api to get data, I would strongly reccomend using the Firebase library and subscribing to the Firebase URLs for those data endpoints. This will allow you to get large amounts of data without making http requests. You can learn more about reading data from a Firebase URL in [their documenation](https://firebase.google.com/docs/database/web/read-and-write?authuser=0). Also, keep in mind you will be reading from the Hacker News Firebase, so when you initilize your firebase app it will look like this:
+Although you could probably just make normal ajax requests for to the firebase api to get data, I would strongly recommend using the Firebase library and subscribing to the Firebase URLs for those data endpoints. This will allow you to get large amounts of data without making HTTP requests. You can learn more about reading data from a Firebase URL in [their documenation](https://firebase.google.com/docs/database/web/read-and-write?authuser=0). Also, keep in mind you will be reading from the Hacker News Firebase, so when you initialize your firebase app it will look like this:
 ```
 firebase.initializeApp({
   authDomain: "hacker-news.firebaseio.com",
@@ -27,13 +27,13 @@ firebase.initializeApp({
 
 ### Instructions
 1. Recreate a working version of the homepage for Hacker News. It should only display 30 items at a time and display the next page when you click the **More** button.
-2. Create a Comments page. This page should display the info at the top from the orginal post and all of the comments for this post.
+2. Create a Comments page. This page should display the info at the top from the original post and all of the comments for this post.
 3. You do not need to build other pages, nor should you
 4. You don't need to recreate all the top nav links, they won't work anyway
-5. You will be using the following [Hacker News API endpoints](https://github.com/HackerNews/API), you should not need to use any other enpoints:
+5. You will be using the following [Hacker News API endpoints](https://github.com/HackerNews/API), you should not need to use any other endpoints:
 - **Top Stories** -  [https://hacker-news.firebaseio.com/v0/topstories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty) This simply return a list of ids for all the top stories
 - **Story API** -  [https://hacker-news.firebaseio.com/v0/item/8863](https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty) This returns data for a story
-- **Comment API** -  [ https://hacker-news.firebaseio.com/v0/item/2921983]( https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty) This returns data for a comment and is the same url as above. **note: the numbers in those urls are ids for stories or comments**
+- **Comment API** -  [ https://hacker-news.firebaseio.com/v0/item/2921983]( https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty) This returns data for a comment and is the same URL as above. **note: the numbers in those urls are ids for stories or comments**
 6. Each page should have a unique URL (ex. localhost:8080/article/12121. note, it doesn't need to work on refresh as this will require some server side modifications
 
 
