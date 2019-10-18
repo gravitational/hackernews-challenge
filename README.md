@@ -38,13 +38,12 @@ firebase.initializeApp({
 
 
 ### Setup Directions
-This repo is setup with webpack and the npm modules needed to get started. To start the project simply do the following:
+This repo is setup with webpack and the npm modules needed to get started. If you don't want to use this setup, feel free to create a new repo using `npx create-react-app`. To start the project simply do the following:
 1. run `npm install`
 2. run `npm run start` this will start a dev server on [http://localhost:8080](http://localhost:8080).
 3. Modify code in the `/src` directory. The page will automatically update
-4. If you don't want to use this setup, feel free to create a new repo using `npx create-react-app`.
-5. When you're done, commit your code to github so it can be checked out and reviewed
-6. The test must be completed within **24-48 hours**.
+4. When you're done, commit your code to github so it can be checked out and reviewed
+5. The test must be completed within **24-48 hours**.
 
 ### Build
 1. To build the production version of your app run `npm run build`
