@@ -10,7 +10,7 @@ You can find a working example here:
 ### Tech Stack
 - [Hacker News Firebase API](https://github.com/HackerNews/API) (this is where you will get the data)
 - [React](https://reactjs.org/docs/getting-started.html) (You will use react to create your UI)
-- [React Router](https://reacttraining.com/react-router/web/guides/quick-start) (please use this to navigate to each page)
+- Routing - User whatever makes the most sense for this project.
 - Data Storage - You can use whatever you want but using redux is not required for this small app. In fact no store is required.
 - Styles/CSS - [Styled components](https://www.styled-components.com/) package is already included, however if you'd like to use a more traditiaonal feel free to
 - [Firebase Hosting](https://firebase.google.com/) - Firebase config is setup to allow for Firebase Hosting. You can create a Firebase account if you'd like to use this feature
@@ -34,6 +34,7 @@ firebase.initializeApp({
 - **Top Stories** -  [https://hacker-news.firebaseio.com/v0/topstories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty) This simply return a list of ids for all the top stories
 - **Story API** -  [https://hacker-news.firebaseio.com/v0/item/8863](https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty) This returns data for a story
 - **Comment API** -  [ https://hacker-news.firebaseio.com/v0/item/2921983]( https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty) This returns data for a comment and is the same url as above. **note: the numbers in those urls are ids for stories or comments**
+6. Each page should have a unique URL (ex. localhost:8080/article/12121. note, it doesn't need to work on refresh as this will require some server side modifications
 
 
 ### Setup Directions
@@ -41,8 +42,9 @@ This repo is setup with webpack and the npm modules needed to get started. To st
 1. run `npm install`
 2. run `npm run start` this will start a dev server on [http://localhost:8080](http://localhost:8080).
 3. Modify code in the `/src` directory. The page will automatically update
-4. When you're done, commit your code to github so it can be checked out and reviewed
-5. The test must be completed within **24-48 hours**.
+4. If you don't want to use this setup, feel free to create a new repo using `npx create-react-app`.
+5. When you're done, commit your code to github so it can be checked out and reviewed
+6. The test must be completed within **24-48 hours**.
 
 ### Build
 1. To build the production version of your app run `npm run build`
