@@ -1,4 +1,4 @@
-# Hacker News Front-end Challenge
+# Hacker News Frontend Challenge
 
 ### Objective
 The goal of this challenge is to recreate a light weight version of [hackernews](https://news.ycombinator.com/) using React and the [Firebase Hackernews API](https://github.com/HackerNews/API). You can make improvements to the UI of Hacker News if you wish (not required), however please keep the spirit of the site the same (At most it should look like an updated version of HN)
@@ -17,7 +17,7 @@ You can find a working example here:
 - [Webpack](https://webpack.js.org/) - Webpack is already setup with Babel and plug-ins to compile react. Feel free to modify this file.
 
 ### Tips
-Although you could probably just make normal ajax requests for to the firebase api to get data, I would strongly recommend using the Firebase library and subscribing to the Firebase URLs for those data endpoints. This will allow you to get large amounts of data without making HTTP requests. You can learn more about reading data from a Firebase URL in [their documenation](https://firebase.google.com/docs/database/web/read-and-write?authuser=0). Also, keep in mind you will be reading from the Hacker News Firebase, so when you initialize your firebase app it will look like this:
+Although you could probably just make normal ajax requests for to the firebase api to get data, I would strongly recommend using the Firebase library and subscribing to the Firebase URLs for those data endpoints. This will allow you to get large amounts of data without making HTTP requests. You can learn more about reading data from a Firebase URL in [their documentation](https://firebase.google.com/docs/database/web/read-and-write?authuser=0). Also, keep in mind you will be reading from the Hacker News Firebase, so when you initialize your firebase app it will look like this:
 ```
 firebase.initializeApp({
   authDomain: "hacker-news.firebaseio.com",
