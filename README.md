@@ -31,10 +31,9 @@ firebase.initializeApp({
 3. You do not need to build other pages, nor should you
 4. You don't need to recreate all the top nav links, they won't work anyway
 5. You will be using the following [Hacker News API endpoints](https://github.com/HackerNews/API), you should not need to use any other enpoints:
--- **Top Stories** -  [https://hacker-news.firebaseio.com/v0/topstories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty) This simply return a list of ids for all the top stories
--- **Story API** -  [https://hacker-news.firebaseio.com/v0/item/8863](https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty) This returns data for a story
--- **Comment API** -  [ https://hacker-news.firebaseio.com/v0/item/2921983]( https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty) This returns data for a comment and is the same url as above. **note: the numbers in those urls are ids for stories or comments**
-
+- **Top Stories** -  [https://hacker-news.firebaseio.com/v0/topstories](https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty) This simply return a list of ids for all the top stories
+- **Story API** -  [https://hacker-news.firebaseio.com/v0/item/8863](https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty) This returns data for a story
+- **Comment API** -  [ https://hacker-news.firebaseio.com/v0/item/2921983]( https://hacker-news.firebaseio.com/v0/item/2921983.json?print=pretty) This returns data for a comment and is the same url as above. **note: the numbers in those urls are ids for stories or comments**
 
 
 ### Setup Directions
