@@ -43,7 +43,6 @@ This repo is setup with webpack and the npm modules needed to get started. If yo
 2. run `npm run start` this will start a dev server on [http://localhost:8080](http://localhost:8080).
 3. Modify code in the `/src` directory. The page will automatically update
 4. When you're done, commit your code to github so it can be checked out and reviewed
-5. The test must be completed within **24-48 hours**.
 
 ### Build
 1. To build the production version of your app run `npm run build`
