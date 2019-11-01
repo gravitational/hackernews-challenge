@@ -6,30 +6,30 @@ var HTMLConfig = new HTMLWebpackPlugin({
   inject: 'body'
 });
 
-
-
 module.exports = {
   mode: 'development',
-  entry: __dirname + '/src/js/index.jsx',
+  entry: __dirname + '/src/js/index.js',
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader"
         }
       },
-
       {
         test: /\.(png|jpg|gif)$/,
         loader: "file-loader"
       },
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   output: {
     filename: 'app.js',
-    path: __dirname + '/dist'
+    path: __dirname + '/dist',
+    publicPath: '/'
   },
   plugins: [
     HTMLConfig
@@ -38,4 +38,3 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   }
 };
-
