@@ -22,8 +22,8 @@ firebase.initializeApp({
 ```
 
 ### Instructions
-1. Create your own repo.
-2. Create a branch in your repo that you'll use to create a pull request when you're done
+1. Create a repository on Github and add an initial commit.
+2. All development work should happen on a separate branch. Once you're done, open a pull request from that development branch to master, so we can review your work.
 3. Recreate a working version of the homepage for Hacker News. It should only display 30 items at a time and display the next page when you click the **More** button.
 4. Create a Comments page. This page should display the info at the top from the original post and all of the comments for this post.
 5. You do not need to build other pages, nor should you
